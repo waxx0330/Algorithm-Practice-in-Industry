@@ -53478,5 +53478,40 @@
         "pub_date": "2025-11-05",
         "summary": "Approximate Nearest Neighbor Search (ANNS) is a cornerstone algorithm for information retrieval, recommendation systems, and machine learning applications. While x86-based architectures have historically dominated this domain, the increasing adoption of ARM-based servers in industry presents a critical need for ANNS solutions optimized on ARM architectures. A naive port of existing x86 ANNS algorithms to ARM platforms results in a substantial performance deficit, failing to leverage the unique capabilities of the underlying hardware. To address this challenge, we introduce KScaNN, a novel ANNS algorithm co-designed for the Kunpeng 920 ARM architecture. KScaNN embodies a holistic approach that synergizes sophisticated, data aware algorithmic refinements with carefully-designed hardware specific optimizations. Its core contributions include: 1) novel algorithmic techniques, including a hybrid intra-cluster search strategy and an improved PQ residual calculation method, which optimize the search process at a higher level; 2) an ML-driven adaptive search module that provides adaptive, per-query tuning of search parameters, eliminating the inefficiencies of static configurations; and 3) highly-optimized SIMD kernels for ARM that maximize hardware utilization for the critical distance computation workloads. The experimental results demonstrate that KScaNN not only closes the performance gap but establishes a new standard, achieving up to a 1.63x speedup over the fastest x86-based solution. This work provides a definitive blueprint for achieving leadership-class performance for vector search on modern ARM architectures and underscores",
         "translated": ""
+    },
+    {
+        "title": "LLM-as-a-Judge: Toward World Models for Slate Recommendation Systems",
+        "url": "http://arxiv.org/abs/2511.04541v1",
+        "pub_date": "2025-11-06",
+        "summary": "Modeling user preferences across domains remains a key challenge in slate recommendation (i.e. recommending an ordered sequence of items) research. We investigate how Large Language Models (LLM) can effectively act as world models of user preferences through pairwise reasoning over slates. We conduct an empirical study involving several LLMs on three tasks spanning different datasets. Our results reveal relationships between task performance and properties of the preference function captured by LLMs, hinting towards areas for improvement and highlighting the potential of LLMs as world models in recommender systems.",
+        "translated": ""
+    },
+    {
+        "title": "RUST-BENCH: Benchmarking LLM Reasoning on Unstructured Text within\n  Structured Tables",
+        "url": "http://arxiv.org/abs/2511.04491v1",
+        "pub_date": "2025-11-06",
+        "summary": "Existing tabular reasoning benchmarks mostly test models on small, uniform tables, underrepresenting the complexity of real-world data and giving an incomplete view of Large Language Models' (LLMs) reasoning abilities. Real tables are long, heterogeneous, and domain-specific, mixing structured fields with free text and requiring multi-hop reasoning across thousands of tokens. To address this gap, we introduce RUST-BENCH, a benchmark of 7966 questions from 2031 real-world tables spanning two domains: i) RB-Science (NSF grant records) and ii) RB-Sports (NBA statistics). Unlike prior work, RUST-BENCH evaluates LLMs jointly across scale, heterogeneity, domain specificity, and reasoning complexity. Experiments with open-source and proprietary models show that LLMs struggle with heterogeneous schemas and complex multi-hop inference, revealing persistent weaknesses in current architectures and prompting strategies. RUST-BENCH establishes a challenging new testbed for advancing tabular reasoning research.",
+        "translated": ""
+    },
+    {
+        "title": "Ground-Truth Subgraphs for Better Training and Evaluation of Knowledge\n  Graph Augmented LLMs",
+        "url": "http://arxiv.org/abs/2511.04473v1",
+        "pub_date": "2025-11-06",
+        "summary": "Retrieval of information from graph-structured knowledge bases represents a promising direction for improving the factuality of LLMs. While various solutions have been proposed, a comparison of methods is difficult due to the lack of challenging QA datasets with ground-truth targets for graph retrieval. We present SynthKGQA, a framework for generating high-quality synthetic Knowledge Graph Question Answering datasets from any Knowledge Graph, providing the full set of ground-truth facts in the KG to reason over each question. We show how, in addition to enabling more informative benchmarking of KG retrievers, the data produced with SynthKGQA also allows us to train better models. We apply SynthKGQA to Wikidata to generate GTSQA, a new dataset designed to test zero-shot generalization abilities of KG retrievers with respect to unseen graph structures and relation types, and benchmark popular solutions for KG-augmented LLMs on it.",
+        "translated": ""
+    },
+    {
+        "title": "On the Brittleness of CLIP Text Encoders",
+        "url": "http://arxiv.org/abs/2511.04247v1",
+        "pub_date": "2025-11-06",
+        "summary": "Multimodal co-embedding models, especially CLIP, have advanced the state of the art in zero-shot classification and multimedia information retrieval in recent years by aligning images and text in a shared representation space. However, such modals trained on a contrastive alignment can lack stability towards small input perturbations. Especially when dealing with manually expressed queries, minor variations in the query can cause large differences in the ranking of the best-matching results. In this paper, we present a systematic analysis of the effect of multiple classes of non-semantic query perturbations in an multimedia information retrieval scenario. We evaluate a diverse set of lexical, syntactic, and semantic perturbations across multiple CLIP variants using the TRECVID Ad-Hoc Video Search queries and the V3C1 video collection. Across models, we find that syntactic and semantic perturbations drive the largest instabilities, while brittleness is concentrated in trivial surface edits such as punctuation and case. Our results highlight robustness as a critical dimension for evaluating vision-language models beyond benchmark accuracy.",
+        "translated": ""
+    },
+    {
+        "title": "Denoised Recommendation Model with Collaborative Signal Decoupling",
+        "url": "http://arxiv.org/abs/2511.04237v1",
+        "pub_date": "2025-11-06",
+        "summary": "Although the collaborative filtering (CF) algorithm has achieved remarkable performance in recommendation systems, it suffers from suboptimal recommendation performance due to noise in the user-item interaction matrix. Numerous noise-removal studies have improved recommendation models, but most existing approaches conduct denoising on a single graph. This may cause attenuation of collaborative signals: removing edges between two nodes can interrupt paths between other nodes, weakening path-dependent collaborative information. To address these limitations, this study proposes a novel GNN-based CF model called DRCSD for denoising unstable interactions. DRCSD includes two core modules: a collaborative signal decoupling module (decomposes signals into distinct orders by structural characteristics) and an order-wise denoising module (performs targeted denoising on each order). Additionally, the information aggregation mechanism of traditional GNN-based CF models is modified to avoid cross-order signal interference until the final pooling operation. Extensive experiments on three public real-world datasets show that DRCSD has superior robustness against unstable interactions and achieves statistically significant performance improvements in recommendation accuracy metrics compared to state-of-the-art baseline models.",
+        "translated": ""
     }
 ]
