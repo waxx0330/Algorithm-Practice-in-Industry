@@ -53618,5 +53618,12 @@
         "pub_date": "2009-10-09",
         "summary": "Paper has been withdrawn.",
         "translated": ""
+    },
+    {
+        "title": "Where did you get that? Towards Summarization Attribution for Analysts",
+        "url": "http://arxiv.org/abs/2511.08589v1",
+        "pub_date": "2025-10-28",
+        "summary": "Analysts require attribution, as nothing can be reported without knowing the source of the information. In this paper, we will focus on automatic methods for attribution, linking each sentence in the summary to a portion of the source text, which may be in one or more documents. We explore using a hybrid summarization, i.e., an automatic paraphrase of an extractive summary, to ease attribution. We also use a custom topology to identify the proportion of different categories of attribution-related errors.",
+        "translated": ""
     }
 ]
