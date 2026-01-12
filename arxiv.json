@@ -54906,5 +54906,40 @@
         "pub_date": "2026-01-08",
         "summary": "Dense retrieval in multilingual settings often searches over mixed-language collections, yet multilingual embeddings encode language identity alongside semantics. This language signal can inflate similarity for same-language pairs and crowd out relevant evidence written in other languages. We propose LANGSAE EDITING, a post-hoc sparse autoencoder trained on pooled embeddings that enables controllable removal of language-identity signal directly in vector space. The method identifies language-associated latent units using cross-language activation statistics, suppresses these units at inference time, and reconstructs embeddings in the original dimensionality, making it compatible with existing vector databases without retraining the base encoder or re-encoding raw text. Experiments across multiple languages show consistent improvements in ranking quality and cross-language coverage, with especially strong gains for script-distinct languages.",
         "translated": ""
+    },
+    {
+        "title": "Influence of Parallelism in Vector-Multiplication Units on Correlation Power Analysis",
+        "url": "http://arxiv.org/abs/2601.05828v1",
+        "pub_date": "2026-01-09",
+        "summary": "The use of neural networks in edge devices is increasing, which introduces new security challenges related to the neural networks' confidentiality. As edge devices often offer physical access, attacks targeting the hardware, such as side-channel analysis, must be considered. To enhance the performance of neural network inference, hardware accelerators are commonly employed. This work investigates the influence of parallel processing within such accelerators on correlation-based side-channel attacks that exploit power consumption. The focus is on neurons that are part of the same fully-connected layer, which run parallel and simultaneously process the same input value. The theoretical impact of concurrent multiply-and-accumulate operations on overall power consumption is evaluated, as well as the success rate of correlation power analysis. Based on the observed behavior, equations are derived that describe how the correlation decreases with increasing levels of parallelism. The applicability of these equations is validated using a vector-multiplication unit implemented on an FPGA.",
+        "translated": ""
+    },
+    {
+        "title": "Statistical Foundations of DIME: Risk Estimation for Practical Index Selection",
+        "url": "http://arxiv.org/abs/2601.05649v1",
+        "pub_date": "2026-01-09",
+        "summary": "High-dimensional dense embeddings have become central to modern Information Retrieval, but many dimensions are noisy or redundant. Recently proposed DIME (Dimension IMportance Estimation), provides query-dependent scores to identify informative components of embeddings. DIME relies on a costly grid search to select a priori a dimensionality for all the query corpus's embeddings. Our work provides a statistically grounded criterion that directly identifies the optimal set of dimensions for each query at inference time. Experiments confirm achieving parity of effectiveness and reduces embedding size by an average of $\\sim50\\%$ across different models and datasets at inference time.",
+        "translated": ""
+    },
+    {
+        "title": "Revisiting Human-vs-LLM judgments using the TREC Podcast Track",
+        "url": "http://arxiv.org/abs/2601.05603v1",
+        "pub_date": "2026-01-09",
+        "summary": "Using large language models (LLMs) to annotate relevance is an increasingly important technique in the information retrieval community. While some studies demonstrate that LLMs can achieve high user agreement with ground truth (human) judgments, other studies have argued for the opposite conclusion. To the best of our knowledge, these studies have primarily focused on classic ad-hoc text search scenarios. In this paper, we conduct an analysis on user agreement between LLM and human experts, and explore the impact disagreement has on system rankings. In contrast to prior studies, we focus on a collection composed of audio files that are transcribed into two-minute segments -- the TREC 2020 and 2021 podcast track. We employ five different LLM models to re-assess all of the query-segment pairs, which were originally annotated by TREC assessors. Furthermore, we re-assess a small subset of pairs where LLM and TREC assessors have the highest disagreement, and found that the human experts tend to agree with LLMs more than with the TREC assessors. Our results reinforce the previous insights of Sormunen in 2002 -- that relying on a single assessor leads to lower user agreement.",
+        "translated": ""
+    },
+    {
+        "title": "Autoregressive Ranking: Bridging the Gap Between Dual and Cross Encoders",
+        "url": "http://arxiv.org/abs/2601.05588v1",
+        "pub_date": "2026-01-09",
+        "summary": "Dual and cross encoders have long been mainstays of information retrieval (IR), but are being challenged by the emergent capabilities of LLMs. An LLM-based approach we term pointwise generative ranking - generating tokens the length of a single docID as opposed to a list in order to enable ranking via beam search - combines efficiency and expressivity benefits while leveraging the in-context capabilities of Causal Transformers. Although there is ample evidence to suggest that pretrained LLMs are well-suited for ranking, we find that the vast majority of LLM-based approaches rely on next-token prediction, a loss function which is fundamentally rank-agnostic (and especially so with pointwise supervision). In this paper, we first prove that the expressivity of pointwise generative ranking with multi-token docIDs is superior to that of dual encoders. We then propose SToICaL - a Simple Token-Item Calibrated Loss - which can incorporate rank-aware supervision at both the item and token levels within the pointwise setup. We run a suite of experiments on ranking tasks derived from WordNet (Fellbaum, 1998) and ESCI (Reddy et al., arXiv:2206.06588). Two variants of SToICaL successfully suppress the probability of invalid docID generations and improve on common ranking metrics beyond top-1 retrieval.",
+        "translated": ""
+    },
+    {
+        "title": "Efficient Temporal-aware Matryoshka Adaptation for Temporal Information Retrieval",
+        "url": "http://arxiv.org/abs/2601.05549v1",
+        "pub_date": "2026-01-09",
+        "summary": "Retrievers are a key bottleneck in Temporal Retrieval-Augmented Generation (RAG) systems: failing to retrieve temporally relevant context can degrade downstream generation, regardless of LLM reasoning. We propose Temporal-aware Matryoshka Representation Learning (TMRL), an efficient method that equips retrievers with temporal-aware Matryoshka embeddings. TMRL leverages the nested structure of Matryoshka embeddings to introduce a temporal subspace, enhancing temporal encoding while preserving general semantic representations. Experiments show that TMRL efficiently adapts diverse text embedding models, achieving competitive temporal retrieval and temporal RAG performance compared to prior Matryoshka-based non-temporal methods and prior temporal methods, while enabling flexible accuracy-efficiency trade-offs.",
+        "translated": ""
     }
 ]
