@@ -54941,5 +54941,40 @@
         "pub_date": "2026-01-09",
         "summary": "Retrievers are a key bottleneck in Temporal Retrieval-Augmented Generation (RAG) systems: failing to retrieve temporally relevant context can degrade downstream generation, regardless of LLM reasoning. We propose Temporal-aware Matryoshka Representation Learning (TMRL), an efficient method that equips retrievers with temporal-aware Matryoshka embeddings. TMRL leverages the nested structure of Matryoshka embeddings to introduce a temporal subspace, enhancing temporal encoding while preserving general semantic representations. Experiments show that TMRL efficiently adapts diverse text embedding models, achieving competitive temporal retrieval and temporal RAG performance compared to prior Matryoshka-based non-temporal methods and prior temporal methods, while enabling flexible accuracy-efficiency trade-offs.",
         "translated": ""
+    },
+    {
+        "title": "Beyond Single-Shot: Multi-step Tool Retrieval via Query Planning",
+        "url": "http://arxiv.org/abs/2601.07782v1",
+        "pub_date": "2026-01-12",
+        "summary": "LLM agents operating over massive, dynamic tool libraries rely on effective retrieval, yet standard single-shot dense retrievers struggle with complex requests. These failures primarily stem from the disconnect between abstract user goals and technical documentation, and the limited capacity of fixed-size embeddings to model combinatorial tool compositions. To address these challenges, we propose TOOLQP, a lightweight framework that models retrieval as iterative query planning. Instead of single-shot matching, TOOLQP decomposes instructions into sub-tasks and dynamically generates queries to interact with the retriever, effectively bridging the semantic gap by targeting the specific sub-tasks required for composition. We train TOOLQP using synthetic query trajectories followed by optimization via Reinforcement Learning with Verifiable Rewards (RLVR). Experiments demonstrate that TOOLQP achieves state-of-the-art performance, exhibiting superior zero-shot generalization, robustness across diverse retrievers, and significant improvements in downstream agentic execution.",
+        "translated": ""
+    },
+    {
+        "title": "AptaFind: A lightweight local interface for automated aptamer curation from scientific literature",
+        "url": "http://arxiv.org/abs/2601.07684v1",
+        "pub_date": "2026-01-12",
+        "summary": "Aptamer researchers face a literature landscape scattered across publications, supplements, and databases, with each search consuming hours that could be spent at the bench. AptaFind transforms this navigation problem through a three-tier intelligence architecture that recognizes research mining is a spectrum, not a binary success or failure. The system delivers direct sequence extraction when possible, curated research leads when extraction fails, and exhaustive literature discovery for additional confidence. By combining local language models for semantic understanding with deterministic algorithms for reliability, AptaFind operates without cloud dependencies or subscription barriers. Validation across 300 University of Texas Aptamer Database targets demonstrates 84 % with some literature found, 84 % with curated research leads, and 79 % with a direct sequence extraction, at a laptop-compute rate of over 900 targets an hour. The platform proves that even when direct sequence extraction fails, automation can still deliver the actionable intelligence researchers need by rapidly narrowing the search to high quality references.",
+        "translated": ""
+    },
+    {
+        "title": "GAP-Net: Calibrating User Intent via Gated Adaptive Progressive Learning for CTR Prediction",
+        "url": "http://arxiv.org/abs/2601.07613v1",
+        "pub_date": "2026-01-12",
+        "summary": "Sequential user behavior modeling is pivotal for Click-Through Rate (CTR) prediction yet is hindered by three intrinsic bottlenecks: (1) the \"Attention Sink\" phenomenon, where standard Softmax compels the model to allocate probability mass to noisy behaviors; (2) the Static Query Assumption, which overlooks dynamic shifts in user intent driven by real-time contexts; and (3) Rigid View Aggregation, which fails to adaptively weight heterogeneous temporal signals according to the decision context. To bridge these gaps, we propose GAP-Net (Gated Adaptive Progressive Network), a unified framework establishing a \"Triple Gating\" architecture to progressively refine information from micro-level features to macro-level views. GAP-Net operates through three integrated mechanisms: (1) Adaptive Sparse-Gated Attention (ASGA) employs micro-level gating to enforce sparsity, effectively suppressing massive noise activations; (2) Gated Cascading Query Calibration (GCQC) dynamically aligns user intent by bridging real-time triggers and long-term memories via a meso-level cascading channel; and (3) Context-Gated Denoising Fusion (CGDF) performs macro-level modulation to orchestrate the aggregation of multi-view sequences. Extensive experiments on industrial datasets demonstrate that GAP-Net achieves substantial improvements over state-of-the-art baselines, exhibiting superior robustness against interaction noise and intent drift.",
+        "translated": ""
+    },
+    {
+        "title": "Loci Similes: A Benchmark for Extracting Intertextualities in Latin Literature",
+        "url": "http://arxiv.org/abs/2601.07533v1",
+        "pub_date": "2026-01-12",
+        "summary": "Tracing connections between historical texts is an important part of intertextual research, enabling scholars to reconstruct the virtual library of a writer and identify the sources influencing their creative process. These intertextual links manifest in diverse forms, ranging from direct verbatim quotations to subtle allusions and paraphrases disguised by morphological variation. Language models offer a promising path forward due to their capability of capturing semantic similarity beyond lexical overlap. However, the development of new methods for this task is held back by the scarcity of standardized benchmarks and easy-to-use datasets. We address this gap by introducing Loci Similes, a benchmark for Latin intertextuality detection comprising of a curated dataset of ~172k text segments containing 545 expert-verified parallels linking Late Antique authors to a corpus of classical authors. Using this data, we establish baselines for retrieval and classification of intertextualities with state-of-the-art LLMs.",
+        "translated": ""
+    },
+    {
+        "title": "RLPO: Residual Listwise Preference Optimization for Long-Context Review Ranking",
+        "url": "http://arxiv.org/abs/2601.07449v1",
+        "pub_date": "2026-01-12",
+        "summary": "Review ranking is pivotal in e-commerce for prioritizing diagnostic and authentic feedback from the deluge of user-generated content. While large language models have improved semantic assessment, existing ranking paradigms face a persistent trade-off in long-context settings. Pointwise scoring is efficient but often fails to account for list-level interactions, leading to miscalibrated top-$k$ rankings. Listwise approaches can leverage global context, yet they are computationally expensive and become unstable as candidate lists grow. To address this, we propose Residual Listwise Preference Optimization (RLPO), which formulates ranking as listwise representation-level residual correction over a strong pointwise LLM scorer. RLPO first produces calibrated pointwise scores and item representations, then applies a lightweight encoder over the representations to predict listwise score residuals, avoiding full token-level listwise processing. We also introduce a large-scale benchmark for long-context review ranking with human verification. Experiments show RLPO improves NDCG@k over strong pointwise and listwise baselines and remains robust as list length increases.",
+        "translated": ""
     }
 ]
