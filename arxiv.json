@@ -55501,5 +55501,40 @@
         "pub_date": "2026-02-03",
         "summary": "The way customers search for and choose products is changing with the rise of large language models (LLMs). LLM-based search, or generative engines, provides direct product recommendations to users, rather than traditional online search results that require users to explore options themselves. However, these recommendations are strongly influenced by the initial retrieval order of LLMs, which disadvantages small businesses and independent creators by limiting their visibility.   In this work, we propose CORE, an optimization method that \\textbf{C}ontrols \\textbf{O}utput \\textbf{R}ankings in g\\textbf{E}nerative Engines for LLM-based search. Since the LLM's interactions with the search engine are black-box, CORE targets the content returned by search engines as the primary means of influencing output rankings. Specifically, CORE optimizes retrieved content by appending strategically designed optimization content to steer the ranking of outputs. We introduce three types of optimization content: string-based, reasoning-based, and review-based, demonstrating their effectiveness in shaping output rankings. To evaluate CORE in realistic settings, we introduce ProductBench, a large-scale benchmark with 15 product categories and 200 products per category, where each product is associated with its top-10 recommendations collected from Amazon's search interface.   Extensive experiments on four LLMs with search capabilities (GPT-4o, Gemini-2.5, Claude-4, and Grok-3) demonstrate that CORE achieves an average Promotion Success Rate of \\textbf{91.4\\% @Top-5}, \\textbf{86.6\\% @Top-3}, and \\textbf{80.3\\% @Top-1}, across 15 product categories, outperforming existing ranking manipulation methods while preserving the fluency of optimized content.",
         "translated": ""
+    },
+    {
+        "title": "Robust Generalizable Heterogeneous Legal Link Prediction",
+        "url": "http://arxiv.org/abs/2602.04812v1",
+        "pub_date": "2026-02-04",
+        "summary": "Recent work has applied link prediction to large heterogeneous legal citation networks \\new{with rich meta-features}. We find that this approach can be improved by including edge dropout and feature concatenation for the learning of more robust representations, which reduces error rates by up to 45%. We also propose an approach based on multilingual node features with an improved asymmetric decoder for compatibility, which allows us to generalize and extend the prediction to more, geographically and linguistically disjoint, data from New Zealand. Our adaptations also improve inductive transferability between these disjoint legal systems.",
+        "translated": ""
+    },
+    {
+        "title": "From Data to Behavior: Predicting Unintended Model Behaviors Before Training",
+        "url": "http://arxiv.org/abs/2602.04735v1",
+        "pub_date": "2026-02-04",
+        "summary": "Large Language Models (LLMs) can acquire unintended biases from seemingly benign training data even without explicit cues or malicious content. Existing methods struggle to detect such risks before fine-tuning, making post hoc evaluation costly and inefficient. To address this challenge, we introduce Data2Behavior, a new task for predicting unintended model behaviors prior to training. We also propose Manipulating Data Features (MDF), a lightweight approach that summarizes candidate data through their mean representations and injects them into the forward pass of a base model, allowing latent statistical signals in the data to shape model activations and reveal potential biases and safety risks without updating any parameters. MDF achieves reliable prediction while consuming only about 20% of the GPU resources required for fine-tuning. Experiments on Qwen3-14B, Qwen2.5-32B-Instruct, and Gemma-3-12b-it confirm that MDF can anticipate unintended behaviors and provide insight into pre-training vulnerabilities.",
+        "translated": ""
+    },
+    {
+        "title": "Addressing Corpus Knowledge Poisoning Attacks on RAG Using Sparse Attention",
+        "url": "http://arxiv.org/abs/2602.04711v1",
+        "pub_date": "2026-02-04",
+        "summary": "Retrieval Augmented Generation (RAG) is a highly effective paradigm for keeping LLM-based responses up-to-date and reducing the likelihood of hallucinations. Yet, RAG was recently shown to be quite vulnerable to corpus knowledge poisoning: an attacker injects misleading documents to the corpus to steer an LLMs' output to an undesired response. We argue that the standard causal attention mechanism in LLMs enables harmful cross-document interactions, specifically in cases of attacks. Accordingly, we introduce a novel defense approach for RAG: Sparse Document Attention RAG (SDAG). This is a block-sparse attention mechanism that disallows cross-attention between retrieved documents. SDAG requires a minimal inference-time change to the attention mask; furthermore, no fine-tuning or additional architectural changes are needed. We present an empirical evaluation of LLM-based question answering (QA) with a variety of attack strategies on RAG. We show that our SDAG method substantially outperforms the standard causal attention mechanism in terms of attack success rate. We further demonstrate the clear merits of integrating SDAG with state-of-the-art RAG defense methods. Specifically, the integration results in performance that is statistically significantly better than the state-of-the-art.",
+        "translated": ""
+    },
+    {
+        "title": "Multi-Source Retrieval and Reasoning for Legal Sentencing Prediction",
+        "url": "http://arxiv.org/abs/2602.04690v1",
+        "pub_date": "2026-02-04",
+        "summary": "Legal judgment prediction (LJP) aims to predict judicial outcomes from case facts and typically includes law article, charge, and sentencing prediction. While recent methods perform well on the first two subtasks, legal sentencing prediction (LSP) remains difficult due to its need for fine-grained objective knowledge and flexible subjective reasoning. To address these limitations, we propose $MSR^2$, a framework that integrates multi-source retrieval and reasoning in LLMs with reinforcement learning. $MSR^2$ enables LLMs to perform multi-source retrieval based on reasoning needs and applies a process-level reward to guide intermediate subjective reasoning steps. Experiments on two real-world datasets show that $MSR^2$ improves both accuracy and interpretability in LSP, providing a promising step toward practical legal AI. Our code is available at https://anonymous.4open.science/r/MSR2-FC3B.",
+        "translated": ""
+    },
+    {
+        "title": "AIANO: Enhancing Information Retrieval with AI-Augmented Annotation",
+        "url": "http://arxiv.org/abs/2602.04579v1",
+        "pub_date": "2026-02-04",
+        "summary": "The rise of Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) has rapidly increased the need for high-quality, curated information retrieval datasets. These datasets, however, are currently created with off-the-shelf annotation tools that make the annotation process complex and inefficient. To streamline this process, we developed a specialized annotation tool - AIANO. By adopting an AI-augmented annotation workflow that tightly integrates human expertise with LLM assistance, AIANO enables annotators to leverage AI suggestions while retaining full control over annotation decisions. In a within-subject user study ($n = 15$), participants created question-answering datasets using both a baseline tool and AIANO. AIANO nearly doubled annotation speed compared to the baseline while being easier to use and improving retrieval accuracy. These results demonstrate that AIANO's AI-augmented approach accelerates and enhances dataset creation for information retrieval tasks, advancing annotation capabilities in retrieval-intensive domains.",
+        "translated": ""
     }
 ]
