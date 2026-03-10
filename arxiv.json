@@ -56306,5 +56306,40 @@
         "pub_date": "2026-03-06",
         "summary": "In conversational search systems, a key component is to determine and clarify the intent behind complex queries. We view intent clarification in light of the exploratory search paradigm, where users, through an iterative, evolving process of selection, exploration and retrieval, transform a visceral or conscious need into a formalized one. Augmenting the clarification component with a retrieval step (retrieval-augmented intent clarification) can seriously enhance clarification performance, especially in domains where Large Language Models (LLMs) lack parametric knowledge. However, in more sensitive domains, such as healthcare, government (e.g. FOIA search) or legal contexts, the retrieval database may contain sensitive information that needs protection. In this paper, we explore the research challenge of developing a retrieval-augmented conversational agent that can act as a mediator and gatekeeper for the sensitive collection. To do that, we also need to know what we are protecting and against what. We propose to tackle this research challenge in three steps: 1) define an attack model, 2) design sensitivity-aware defenses on the retrieval level and 3) develop evaluation methods to measure the trade-off between the level of protection and the system's utility.",
         "translated": ""
+    },
+    {
+        "title": "OfficeQA Pro: An Enterprise Benchmark for End-to-End Grounded Reasoning",
+        "url": "http://arxiv.org/abs/2603.08655v1",
+        "pub_date": "2026-03-09",
+        "summary": "We introduce OfficeQA Pro, a benchmark for evaluating AI agents on grounded, multi-document reasoning over a large and heterogeneous document corpus. The corpus consists of U.S. Treasury Bulletins spanning nearly 100 years, comprising 89,000 pages and over 26 million numerical values. OfficeQA Pro consists of 133 questions that require precise document parsing, retrieval, and analytical reasoning across both unstructured text and tabular data. Frontier LLMs including Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro Preview achieve less than 5% accuracy on OfficeQA Pro when relying on parametric knowledge, and less than 12% with additional access to the web. When provided directly with the document corpus, frontier agents still struggle on over half of questions, scoring 34.1% on average. We find that providing agents with a structured document representation produced by Databricks' ai_parse_document yields a 16.1% average relative performance gain across agents. We conduct additional ablations to study the effects of model selection, table representation, retrieval strategy, and test-time scaling on performance. Despite these improvements, significant headroom remains before agents can be considered reliable at enterprise-grade grounded reasoning.",
+        "translated": ""
+    },
+    {
+        "title": "LoopLens: Supporting Search as Creation in Loop-Based Music Composition",
+        "url": "http://arxiv.org/abs/2603.08571v1",
+        "pub_date": "2026-03-09",
+        "summary": "Creativity support tools (CSTs) typically frame search as information retrieval, yet in practices like electronic dance music production, search serves as a creative medium for collage-style composition. To address this gap, we present LoopLens, a research probe for loop-based music composition that visualizes audio search results to support creative foraging and assembling. We evaluated LoopLens in a within-subject user study with 16 participants of diverse musical domain expertise, performing both open-ended (divergent) and goal-directed (convergent) tasks. Our results reveal a clear behavioral split: participants with domain expertise leveraged multimodal cues to quickly exploit a narrow set of loops, while those without domain knowledge relied primarily on audio impressions, engaging in broad exploration often constrained by limited musical vocabulary for query formulation. This behavioral dichotomy provides a new lens for understanding the balance between exploration and exploitation in creative search and offers clear design implications for supporting vocabulary-independent discovery in future CSTs.",
+        "translated": ""
+    },
+    {
+        "title": "mmGAT: Pose Estimation by Graph Attention with Mutual Features from mmWave Radar Point Cloud",
+        "url": "http://arxiv.org/abs/2603.08551v1",
+        "pub_date": "2026-03-09",
+        "summary": "Pose estimation and human action recognition (HAR) are pivotal technologies spanning various domains. While the image-based pose estimation and HAR are widely admired for their superior performance, they lack in privacy protection and suboptimal performance in low-light and dark environments. This paper exploits the capabilities of millimeter-wave (mmWave) radar technology for human pose estimation by processing radar data with Graph Neural Network (GNN) architecture, coupled with the attention mechanism. Our goal is to capture the finer details of the radar point cloud to improve the pose estimation performance. To this end, we present a unique feature extraction technique that exploits the full potential of the GNN processing method for pose estimation. Our model mmGAT demonstrates remarkable performance on two publicly available benchmark mmWave datasets and establishes new state of the art results in most scenarios in terms of human pose estimation. Our approach achieves a noteworthy reduction of pose estimation mean per joint position error (MPJPE) by 35.6% and PA-MPJPE by 14.1% from the current state of the art benchmark within this domain.",
+        "translated": ""
+    },
+    {
+        "title": "PCFEx: Point Cloud Feature Extraction for Graph Neural Networks",
+        "url": "http://arxiv.org/abs/2603.08540v1",
+        "pub_date": "2026-03-09",
+        "summary": "Graph neural networks (GNNs) have gained significant attention for their effectiveness across various domains. This study focuses on applying GNN to process 3D point cloud data for human pose estimation (HPE) and human activity recognition (HAR). We propose novel point cloud feature extraction (PCFEx) techniques to capture meaningful information at the point, edge, and graph levels of the point cloud by considering point cloud as a graph. Moreover, we introduce a GNN architecture designed to efficiently process these features. Our approach is evaluated on four most popular publicly available millimeter wave radar datasets, three for HPE and one for HAR. The results show substantial improvements, with significantly reduced errors in all three HPE benchmarks, and an overall accuracy of 98.8% in mmWave-based HAR, outperforming the existing state of the art models. This work demonstrates the great potential of feature extraction incorporated with GNN modeling approach to enhance the precision of point cloud processing.",
+        "translated": ""
+    },
+    {
+        "title": "One Model Is Enough: Native Retrieval Embeddings from LLM Agent Hidden States",
+        "url": "http://arxiv.org/abs/2603.08429v1",
+        "pub_date": "2026-03-09",
+        "summary": "LLM agents that retrieve external knowledge typically generate a search query as text, then run a separate embedding model to encode it into a vector. This two-model pipeline adds infrastructure complexity and latency, yet is redundant: the LLM already encodes the full conversational context in its hidden states. We propose equipping LLM agents with native retrieval capability by adding a lightweight projection head that maps hidden states directly into the embedding space, eliminating the need for a separate embedding model. Trained with a combination of alignment, contrastive, and rank distillation losses, our method retains 97\\% of baseline retrieval quality while enabling the LLM agent to search with its own representations. Experiments on the QReCC conversational search benchmark show competitive Recall@10 and MRR@10 compared to the standard generate-then-encode pipeline, with systematic ablations confirming the contribution of each loss component.",
+        "translated": ""
     }
 ]
