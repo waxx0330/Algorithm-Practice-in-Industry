@@ -56761,5 +56761,40 @@
         "pub_date": "2026-03-25",
         "summary": "One of the many fairness definitions pursued in recent recommender system research targets mitigating demographic information encoded in model representations. Models optimized for this definition are typically evaluated on how well demographic attributes can be classified given model representations, with the (implicit) assumption that this measure accurately reflects \\textit{recommendation parity}, i.e., how similar recommendations given to different users are. We challenge this assumption by comparing the amount of demographic information encoded in representations with various measures of how the recommendations differ. We propose two new approaches for measuring how well demographic information can be classified given ranked recommendations. Our results from extensive testing of multiple models on one real and multiple synthetically generated datasets indicate that optimizing for fair representations positively affects recommendation parity, but also that evaluation at the representation level is not a good proxy for measuring this effect when comparing models. We also provide extensive insight into how recommendation-level fairness metrics behave for various models by evaluating their performances on numerous generated datasets with different properties.",
         "translated": ""
+    },
+    {
+        "title": "Training the Knowledge Base through Evidence Distillation and Write-Back Enrichment",
+        "url": "http://arxiv.org/abs/2603.25737v1",
+        "pub_date": "2026-03-26",
+        "summary": "The knowledge base in a retrieval-augmented generation (RAG) system is typically assembled once and never revised, even though the facts a query requires are often fragmented across documents and buried in irrelevant content. We argue that the knowledge base should be treated as a trainable component and propose WriteBack-RAG, a framework that uses labeled examples to identify where retrieval succeeds, isolate the relevant documents, and distill them into compact knowledge units that are indexed alongside the original corpus. Because the method modifies only the corpus, it can be applied once as an offline preprocessing step and combined with any RAG pipeline. Across four RAG methods, six benchmarks, and two LLM backbones, WriteBack-RAG improves every evaluated setting, with gains averaging +2.14%. Cross-method transfer experiments further show that the distilled knowledge benefits RAG pipelines other than the one used to produce it, confirming that the improvement resides in the corpus itself.",
+        "translated": ""
+    },
+    {
+        "title": "Unveiling the Resilience of LLM-Enhanced Search Engines against Black-Hat SEO Manipulation",
+        "url": "http://arxiv.org/abs/2603.25500v1",
+        "pub_date": "2026-03-26",
+        "summary": "The emergence of Large Language Model-enhanced Search Engines (LLMSEs) has revolutionized information retrieval by integrating web-scale search capabilities with AI-powered summarization. While these systems demonstrate improved efficiency over traditional search engines, their security implications against well-established black-hat Search Engine Optimization (SEO) attacks remain unexplored.   In this paper, we present the first systematic study of SEO attacks targeting LLMSEs. Specifically, we examine ten representative LLMSE products (e.g., ChatGPT, Gemini) and construct SEO-Bench, a benchmark comprising 1,000 real-world black-hat SEO websites, to evaluate both open- and closed-source LLMSEs. Our measurements show that LLMSEs mitigate over 99.78% of traditional SEO attacks, with the phase of retrieval serving as the primary filter, intercepting the vast majority of malicious queries. We further propose and evaluate seven LLMSEO attack strategies, demonstrating that off-the-shelf LLMSEs are vulnerable to LLMSEO attacks, i.e., rewritten-query stuffing and segmented texts double the manipulation rate compared to the baseline. This work offers the first in-depth security analysis of the LLMSE ecosystem, providing practical insights for building more resilient AI-driven search systems. We have responsibly reported the identified issues to major vendors.",
+        "translated": ""
+    },
+    {
+        "title": "Supercharging Federated Intelligence Retrieval",
+        "url": "http://arxiv.org/abs/2603.25374v1",
+        "pub_date": "2026-03-26",
+        "summary": "RAG typically assumes centralized access to documents, which breaks down when knowledge is distributed across private data silos. We propose a secure Federated RAG system built using Flower that performs local silo retrieval, while server-side aggregation and text generation run inside an attested, confidential compute environment, enabling confidential remote LLM inference even in the presence of honest-but-curious or compromised servers. We also propose a cascading inference approach that incorporates a non-confidential third-party model (e.g., Amazon Nova) as auxiliary context without weakening confidentiality.",
+        "translated": ""
+    },
+    {
+        "title": "Adaptive Chunking: Optimizing Chunking-Method Selection for RAG",
+        "url": "http://arxiv.org/abs/2603.25333v1",
+        "pub_date": "2026-03-26",
+        "summary": "The effectiveness of Retrieval-Augmented Generation (RAG) is highly dependent on how documents are chunked, that is, segmented into smaller units for indexing and retrieval. Yet, commonly used \"one-size-fits-all\" approaches often fail to capture the nuanced structure and semantics of diverse texts. Despite its central role, chunking lacks a dedicated evaluation framework, making it difficult to assess and compare strategies independently of downstream performance. We challenge this paradigm by introducing Adaptive Chunking, a framework that selects the most suitable chunking strategy for each document based on a set of five novel intrinsic, document-based metrics: References Completeness (RC), Intrachunk Cohesion (ICC), Document Contextual Coherence (DCC), Block Integrity (BI), and Size Compliance (SC), which directly assess chunking quality across key dimensions. To support this framework, we also introduce two new chunkers, an LLM-regex splitter and a split-then-merge recursive splitter, alongside targeted post-processing techniques. On a diverse corpus spanning legal, technical, and social science domains, our metric-guided adaptive method significantly improves downstream RAG performance. Without changing models or prompts, our framework increases RAG outcomes, raising answers correctness to 72% (from 62-64%) and increasing the number of successfully answered questions by over 30% (65 vs. 49). These results demonstrate that adaptive, document-aware chunking, guided by a complementary suite of intrinsic metrics, offers a practical and effective path to more robust RAG systems. Code available at https://github.com/ekimetrics/adaptive-chunking.",
+        "translated": ""
+    },
+    {
+        "title": "ColBERT-Att: Late-Interaction Meets Attention for Enhanced Retrieval",
+        "url": "http://arxiv.org/abs/2603.25248v1",
+        "pub_date": "2026-03-26",
+        "summary": "Vector embeddings from pre-trained language models form a core component in Neural Information Retrieval systems across a multitude of knowledge extraction tasks. The paradigm of late interaction, introduced in ColBERT, demonstrates high accuracy along with runtime efficiency. However, the current formulation fails to take into account the attention weights of query and document terms, which intuitively capture the \"importance\" of similarities between them, that might lead to a better understanding of relevance between the queries and documents. This work proposes ColBERT-Att, to explicitly integrate attention mechanism into the late interaction framework for enhanced retrieval performance. Empirical evaluation of ColBERT-Att depicts improvements in recall accuracy on MS-MARCO as well as on a wide range of BEIR and LoTTE benchmark datasets.",
+        "translated": ""
     }
 ]
